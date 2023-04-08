@@ -11,6 +11,7 @@ public class FindMin {
             arr[i] = scanner.nextInt();
         }
         System.out.println(findMin(n, arr));
+
     }
 
     private static int findMin(int n, int[] arr) {
