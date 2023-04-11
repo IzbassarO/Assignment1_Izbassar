@@ -16,9 +16,11 @@ public class FindAverage {
 
         System.out.println(findAverage(arr, n));
     }
-    private static double findAverage(int [] arr, int n) {
-        if(n == 1) {return arr[0];}
-        double sum = findAverage(arr, n - 1) * (n - 1) + arr[n - 1];
-        return sum/ n;
+    private static double findAverage(int[] arr, int n) {
+        if (n == 1) {
+            return arr[0];
+        }
+        double sum = findAverage(arr, n - 1) + arr[n - 1]; // corrected sum calculation
+        return sum / n;
     }
 }
